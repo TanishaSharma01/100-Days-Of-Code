@@ -53,7 +53,7 @@ def process_coins():
 def payment_sufficient(payment, drink_cost):
     if payment >= drink_cost:
         change = round(payment - drink_cost, 2)
-        print(f"Here's your coffee cutie :))) and your change {change}")
+        print(f"Here is ${change} change.")
         global money
         money += drink_cost
         return True
